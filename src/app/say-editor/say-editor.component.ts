@@ -14,6 +14,7 @@ export class SayEditorComponent {
   constructor(elementRef: ElementRef) {
     afterNextRender({
       write: () => {
+        // @ts-expect-error
         App.create(
           { name: 'embeddable-test-vite', autoboot: false }
         ).visit('/', { rootElement: "#container", location: "none" })
