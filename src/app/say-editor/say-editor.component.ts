@@ -1,6 +1,6 @@
 import { afterNextRender, afterRender, Component, ElementRef } from '@angular/core';
 import { App } from 'embeddable-test-vite'
-// import 'embeddable-test-vite/style.css'
+import 'embeddable-test-vite/style.css'
 
 @Component({
   selector: 'app-say-editor',
